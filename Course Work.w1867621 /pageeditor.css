@@ -1,0 +1,5 @@
+body{background-image:linear-gradient(to left, #000000, #4f4d4e, #97919b, #5e5a5b, #605b5c, #b7b1b2, #95888b, #474243, #cfa8b1, #535152, #524d4e, #000000);}
+h3,p{color:white;}
+#pic{height:150px; width:150px; border-radius:50%; border: 2px solid #fff;}
+legend{padding: 30px 10px;}
+fieldset{padding:30px;margin-left:100px;margin-right:100px;margin-top:80px; height:50px; border-color:white;}

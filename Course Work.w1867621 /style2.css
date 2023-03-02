@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+a{
+    text-decoration: none;
+  }
+
+body{
+    position: relative;
+    height: 100vh;
+    margin-left: 30%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* background:url(./images/darksp.jpeg); */
+    background-image: linear-gradient(to right bottom, #000000, #242424, #434343, #656565, #898989);
+    background-size: cover;   
+}
+.logo_icon1{
+    margin-left: -40%;
+}
+
+#firstView{
+    display: block;
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+}
+
+#secondView{
+    display: none;
+    max-width: 700px;
+    width: 100%;
+    background: #eae8eb;
+    padding: 25px 30px;
+    border-radius: 8px;
+}
+.conteiner .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.conteiner form .user-details{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+    margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+}
+.user-details .input-box .deatails{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    border-radius: 15px;
+    padding-left: 15px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color:#b42d1b ;
+}
+form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+form .gender-details .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+form .gender-details .category label{
+    display: flex;
+}
+form .gender-details .category .dot{
+    height: 18px;
+    width: 18px;
+    background:#d9d9d9 ;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+}
+#dot-1:checked ~  .category .one,
+#dot-2:checked ~  .category .two,
+#dot-3:checked ~  .category .three{
+    border-color: #d9d9d9;
+    background: #9b59b6;
+}
+form input[type="radio"]{
+    display: none;
+}
+#details{
+    padding-top: 5%;
+    padding-bottom: 25%;
+    
+}
+#btnViewQuery{
+    background:  linear-gradient(135deg,hsl(210, 6%, 6%),#a53939);
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    width: 25%;
+    height: 5%;
+    font-size: 20px;
+}
+#btnViewQuery:hover{
+    background: linear-gradient(-135deg,#1f2020,#ece6ee);
+}
+
+#btnEditQuery{
+    background:  linear-gradient(135deg,hsl(210, 6%, 6%),#a53939);
+    color: white;
+    border-radius: 30px;
+    width: 25%;
+    height: 5%;
+    font-size: 20px;
+}
+#btnEditQuery a{
+    color: white;
+    font-size: 15px;
+    font-family: 'Unlock', cursive;
+}
+#btnEditQuery:hover{
+    background: linear-gradient(-135deg,#1f2020,#ece6ee);
+}
+
+
+#btnSendQuery{
+    background:  linear-gradient(135deg,hsl(210, 6%, 6%),#a53939);
+    border-radius: 30px;
+    width: 25%;
+    height: 5%;
+    font-size: 20px;
+}
+#btnSendQuery a{
+    color: white;
+    font-size: 15px;
+    font-family: 'Unlock', cursive;
+}
+#btnSendQuery:hover{
+    background: linear-gradient(-135deg,#e9eeee,#52345c);
+}
+
+.title2{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+.user-details2{
+    font-size: 25px;
+    font-weight: 500;
+
+}#EditBtn{
+    background:  transparent;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    letter-spacing: 2px;
+    width: 10%;
+    height: 5%;
+    margin-left: 70%;
+    margin-bottom: -50%;
+}
+#EditBtn a{
+    color: white;
+}
+
+
+

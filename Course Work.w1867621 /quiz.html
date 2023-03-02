@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Quiz</title>
+</head>
+<body>
+  <h3>Put a Tick on Correct answer</h3>
+  <hr>
+  
+    <div class="container" id="quiz">
+        <div class="header">
+            <h2 id="question">Text Q</h2>
+            <ul>
+                <li>
+                   <input type="checkbox" name="answer1" id="answer1" class="answer">
+                   <label for="1" id="text_1">Answer</label>
+                 </li>
+
+                 <li>
+                    <input type="checkbox" name="answer2" id="answer2" class="answer">
+                    <label for="2" id="text_2">Answer</label>
+                  </li>
+
+                  <li>
+                    <input type="checkbox" name="answer3" id="answer3" class="answer">
+                    <label for="3" id="text_3">Answer</label>
+                  </li>
+
+                  <li>
+                    <input type="checkbox" name="answer4" id="answer4" class="answer">
+                    <label for="4" id="text_4">Answer</label>
+                  </li>
+
+
+                  <input id="qnumber" value="0" hidden>
+                  <h2 id="correct"></h2>
+            </ul>
+        
+
+
+
+        </div>
+
+        <button id="submit" onclick=submit()>Submit</button>
+        <button id="next" onclick=next()>Next</button>
+        <button id="next" onclick=reset()>Reset</button>
+
+        <h2 id="marks"></h2>
+
+        
+    </div>
+    
+
+
+    <script src="quiz.js"></script>
+</body>
+</html>

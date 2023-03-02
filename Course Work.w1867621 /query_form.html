@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unlock&display=swap" rel="stylesheet">
+   
+    <title>Query Form</title>
+</head>
+
+<header>
+    <a href="sport.html"> <img src="images/BALL_logo.png" alt="logo" class="logo_icon1" ></a>
+</header>
+
+<body>
+    
+    <div class="conteiner" id="firstView">
+        <div class="title">Query Form</div>
+
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="deatails">Full Name</span>
+                    <input type="text" placeholder="Enter your name" id="name" required>
+                </div>
+                <div class="input-box">
+                    <span class="deatails">E-mail</span>
+                    <input type="email" placeholder="Enter your email" id="email" required>
+                </div>
+                <div class="input-box">
+                    <span class="deatails">Contact Number</span>
+                    <input type="number" placeholder="Enter your number" id="contactNumber" required>
+                </div>
+                <div class="gender-details">
+                    <input type="radio" name="subject" required id="dot-1" value="Deliver" onclick="otherSubject()">
+                    <input type="radio" name="subject" required id="dot-2" value="Product" onclick="otherSubject()">
+                    <input type="radio" name="subject" required id="dot-3" value="Other" onclick="otherSubject()">
+                    <span class="gender-title">Subject</span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="subject">Deliver</span>
+                        </label>
+
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="subject" >Product</span>
+                        </label>
+
+                        <label for="dot-3">
+                            <span class="dot three"></span>
+                            <span class="subject" >Other</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="input-box" id="otherSubject" style="display: none">
+                    <span class="deatails">Other Subject</span>
+                    <input type="text" placeholder="Enter other subject" id="subjectOther" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="deatails">Deatails</span>
+                    <input type="text" id="details" placeholder="Enter your details" required>
+                </div>
+            </div>
+        </form>
+
+        <button id="btnViewQuery">View Query</button>
+    </div>
+
+    <div class="conteiner2" id="secondView">
+        <div class="title2">
+            <h3 data-text="Results">Results</h3>
+        </div>
+        <hr>
+
+        <form action="#">
+            <div class="user-details2">
+                <div class="input-box2">
+                    <span class="deatails2">1.Full Name</span>
+                    <label id="inputName"></label>
+                </div>
+
+                <div class="input-box2">
+                    <span class="deatails2">2.E-mail</span>
+                    <label id="inputEmail"></label>
+                </div>
+
+                <div class="input-box2">
+                    <span class="deatails2">3.Contact Number</span>
+                    <label id="inputContactNO"></label>
+                </div>
+
+                <div class="input-box2">
+                    <span class="deatails2">4.Subject</span>
+                    <label id="inputSubject"></label>
+                </div>
+
+                <div class="input-box2">
+                    <span class="deatails2">5.Details</span>
+                    <label id="inputDetails"></label>
+                </div>
+
+                <a href="#"><button id="btnEditQuery" onclick="EditQueryFunction()">Edit </a></button>
+
+                <a href="mailto:dinal.20210642@iit.ac.lk?"> <button id="btnSendQuery" onclick="SendQueryFunction()">Send</a></button>
+
+                <!-- <a href="#" button id="sender" onclick="SendQueryFunction()">Send</button> -->
+
+            </div>
+        </form>
+    </div>
+
+    <a href="dinal.html"><button id="EditBtn">Edit By </a> </button>
+    <script src="queryform.js"></script>
+</body>
+
+</html>

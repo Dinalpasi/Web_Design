@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+}
+.home{
+    height: 100vh;
+    background-image: url(images/lege.jpg);
+    background-size: cover;
+    padding: 15px;
+    -webkit-display:flex;
+    display: flex;
+    align-items: center;
+
+}
+.home .container{
+    -webkit-display:flex;
+    display: flex;
+    flex-direction: column;
+    
+    flex-grow: 1;
+}
+.home h1{
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/* .home h2{
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+} */
+.home h1 span{
+    color: crimson;
+}
+.about{
+    padding: 80px 15px;
+    background-color: rgb(3, 3, 3);
+}
+
+.about .content{
+    -webkit-display: flex;
+    display: flex;
+}
+.about .content .box{
+    flex: 0 0 33 33%;
+    max-width: 33.33%;
+    padding: 80px;
+}
+.about .content .box .inner{
+    background-color: #222222;
+}
+.about .content .box .inner:hover{
+    transform: scale(1);
+}
+
+.about .content .box:nth-child(2) .inner{
+    background-color: #c11325;
+}
+.about .content .box .inner .img img{
+    width: 100%;
+}
+.about .content .box .inner .img img:hover{
+    transform: scale(1.1);
+}
+.about .content .box .inner .text{
+    padding: 30px;
+}
+.about .content .box .inner .text h4{
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: center;
+    margin: 0;
+    padding: 0px 0px 15px;
+    font-weight: 400px;
+    color: white;
+    text-align: center;
+    transition: all .2s;
+}
+.about .content .box .inner .text p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 20px;
+    color:#c5c5c5;
+    margin: 0;
+    font-weight: 300;
+    text-align: center;
+    transition: all .2s;
+}
+.about .content .box .inner .text h4:hover{
+    transform: scale(1.1);
+}
+.about .content .box .inner .text p{
+    transform: scale(1.1);
+}
+
+.footer{
+    color:#eee;
+    background:#111;
+    text-align: center;
+    padding:2rem 1rem;
+    font-size: 1rem;
+}
+
+.footer a{
+    color: white;
+}
+
+.footer a:hover{
+    color:rgb(255, 2, 2);
+}
+
